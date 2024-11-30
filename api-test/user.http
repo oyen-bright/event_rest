@@ -1,0 +1,29 @@
+POST http://localhost:8080/signup
+Content-Type: application/json
+
+{
+    "email": "user2@example.com",
+    "password": "yourpassword"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email": "user2@example.com",
+    "password": "yourpassword"
+}
+
+
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email": "user4@example.com",
+    "password": "yourpassword"
+}

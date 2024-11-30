@@ -1,0 +1,49 @@
+POST http://localhost:8080/events
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIxQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMzMDAzNDI2LCJ1c2VySWQiOjF9.ZvJPqH2rfw0pMC3MTg-DqOR6TUN-kptBWQ-cqNc2rdQ
+
+{
+    "Name": "Sample Event 2",
+    "Description": "This is a sample event description.",
+    "Location": "Sample Location",
+    "DateTime": "2023-10-10T10:00:00Z"
+}
+
+###
+
+GET http://localhost:8080/events HTTP/1.1
+
+
+###
+PUT http://localhost:8080/events/12
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIzQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMyOTkzNjUzLCJ1c2VySWQiOjF9.YE32KIBUpAa3r1Icck7UGaLPI7QRL5g4ZHvtAiQnOl4
+
+
+{
+    "Name": "Updated Sample Event",
+    "Description": "This is an updated sample event description.",
+    "Location": "Updated Sample Location",
+    "DateTime": "2023-10-11T11:00:00Z"
+}
+
+###
+DELETE http://localhost:8080/events/6
+Content-Type: application/json
+# Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXI0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzMyOTkzOTMyLCJ1c2VySWQiOjJ9.QN5FWGJfWOrTXNZcu3NeI-vdycvhcw5tvuPZ_GAVRDk
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIzQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMyOTkzNjUzLCJ1c2VySWQiOjF9.YE32KIBUpAa3r1Icck7UGaLPI7QRL5g4ZHvtAiQnOl4
+
+
+###
+
+POST http://localhost:8080/events/1/registration
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMzMDAzNjM0LCJ1c2VySWQiOjJ9.dI7GZbWb3atb5FUHiqWdZjBHLDWLj-0MfxYY-pxEjG4
+
+
+###
+
+DELETE http://localhost:8080/events/3/registration
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzZXIyQGV4YW1wbGUuY29tIiwiZXhwIjoxNzMzMDAzNjM0LCJ1c2VySWQiOjJ9.dI7GZbWb3atb5FUHiqWdZjBHLDWLj-0MfxYY-pxEjG4
+
